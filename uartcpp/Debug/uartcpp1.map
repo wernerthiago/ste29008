@@ -1,0 +1,645 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o (exit)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                              ./Buffer.o (__do_copy_data)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                              ./Buffer.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+                              ./Buffer.o (__do_global_ctors)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+                              ./Buffer.o (__do_global_dtors)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+                              /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o) (__tablejump__)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                              ./Buffer.o (free)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__flp               0x2               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ .text          0x0000000000000000        0x0 ./Buffer.o
+ .data          0x0000000000000000        0x0 ./Buffer.o
+ .bss           0x0000000000000000        0x0 ./Buffer.o
+ .text          0x0000000000000000        0x0 ./Uart.o
+ .data          0x0000000000000000        0x0 ./Uart.o
+ .bss           0x0000000000000000        0x0 ./Uart.o
+ .text._ZN4Uart12interruptoffEv
+                0x0000000000000000       0x10 ./Uart.o
+ .text          0x0000000000000000        0x0 ./main.o
+ .data          0x0000000000000000        0x0 ./main.o
+ .bss           0x0000000000000000        0x0 ./main.o
+ .text._ZNK6Buffer7getHeadEv
+                0x0000000000000000       0x22 ./main.o
+ .text._ZNK6Buffer7getTailEv
+                0x0000000000000000       0x22 ./main.o
+ .text._Z5delayv
+                0x0000000000000000       0x50 ./main.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+LOAD ./Buffer.o
+LOAD ./Uart.o
+LOAD ./main.o
+LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x9c8
+ *(.vectors)
+ .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000000000000068                . = ALIGN (0x2)
+                0x0000000000000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000068        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x0000000000000068        0x2 ./Buffer.o
+ .ctors         0x000000000000006a        0x2 ./Uart.o
+                0x000000000000006c                __ctors_end = .
+                0x000000000000006c                __dtors_start = .
+ *(.dtors)
+ .dtors         0x000000000000006c        0x2 ./Buffer.o
+ .dtors         0x000000000000006e        0x2 ./Uart.o
+                0x0000000000000070                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000070        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+                0x0000000000000070                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000070        0xc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000007c       0x16 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                0x000000000000007c                __do_copy_data
+ .init4         0x0000000000000092       0x10 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000092                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000000000000a2       0x14 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+                0x00000000000000a2                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000b6        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000ba        0x2 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+                0x00000000000000ba                __vector_22
+                0x00000000000000ba                __vector_1
+                0x00000000000000ba                __vector_24
+                0x00000000000000ba                __vector_12
+                0x00000000000000ba                __bad_interrupt
+                0x00000000000000ba                __vector_6
+                0x00000000000000ba                __vector_3
+                0x00000000000000ba                __vector_23
+                0x00000000000000ba                __vector_25
+                0x00000000000000ba                __vector_11
+                0x00000000000000ba                __vector_13
+                0x00000000000000ba                __vector_17
+                0x00000000000000ba                __vector_7
+                0x00000000000000ba                __vector_5
+                0x00000000000000ba                __vector_4
+                0x00000000000000ba                __vector_9
+                0x00000000000000ba                __vector_2
+                0x00000000000000ba                __vector_21
+                0x00000000000000ba                __vector_15
+                0x00000000000000ba                __vector_8
+                0x00000000000000ba                __vector_14
+                0x00000000000000ba                __vector_10
+                0x00000000000000ba                __vector_16
+                0x00000000000000ba                __vector_20
+                0x00000000000000bc                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZNK6Buffer9getBufferEv
+                0x00000000000000bc       0x20 ./Buffer.o
+                0x00000000000000bc                _ZNK6Buffer9getBufferEv
+ .text._ZNK6Buffer7getHeadEv
+                0x00000000000000dc       0x22 ./Buffer.o
+                0x00000000000000dc                _ZNK6Buffer7getHeadEv
+ .text._ZN6Buffer7setHeadEi
+                0x00000000000000fe       0x30 ./Buffer.o
+                0x00000000000000fe                _ZN6Buffer7setHeadEi
+ .text._ZNK6Buffer9getMaxLenEv
+                0x000000000000012e       0x20 ./Buffer.o
+                0x000000000000012e                _ZNK6Buffer9getMaxLenEv
+ .text._ZNK6Buffer7getTailEv
+                0x000000000000014e       0x22 ./Buffer.o
+                0x000000000000014e                _ZNK6Buffer7getTailEv
+ .text._ZN6Buffer7setTailEi
+                0x0000000000000170       0x30 ./Buffer.o
+                0x0000000000000170                _ZN6Buffer7setTailEi
+ .text._ZdlPv   0x00000000000001a0       0x1e ./Buffer.o
+                0x00000000000001a0                _ZdlPv
+ .text._ZN6BufferC2Ev
+                0x00000000000001be       0x26 ./Buffer.o
+                0x00000000000001be                _ZN6BufferC1Ev
+                0x00000000000001be                _ZN6BufferC2Ev
+ .text._ZN6BufferD2Ev
+                0x00000000000001e4       0x38 ./Buffer.o
+                0x00000000000001e4                _ZN6BufferD2Ev
+                0x00000000000001e4                _ZN6BufferD1Ev
+ .text._ZN6BufferD0Ev
+                0x000000000000021c       0x24 ./Buffer.o
+                0x000000000000021c                _ZN6BufferD0Ev
+ .text._ZN6Buffer10circBufPopEPS_
+                0x0000000000000240       0xac ./Buffer.o
+                0x0000000000000240                _ZN6Buffer10circBufPopEPS_
+ .text._ZN6Buffer11circBufPushEPS_h
+                0x00000000000002ec       0xa8 ./Buffer.o
+                0x00000000000002ec                _ZN6Buffer11circBufPushEPS_h
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x0000000000000394       0x58 ./Buffer.o
+ .text._GLOBAL__I__ZN6Buffer1bE
+                0x00000000000003ec       0x18 ./Buffer.o
+ .text._GLOBAL__D__ZN6Buffer1bE
+                0x0000000000000404       0x18 ./Buffer.o
+ .text._ZN4UartC2Ev
+                0x000000000000041c       0x5c ./Uart.o
+                0x000000000000041c                _ZN4UartC2Ev
+                0x000000000000041c                _ZN4UartC1Ev
+ .text._ZN4Uart20rx_interrupt_handlerEv
+                0x0000000000000478       0x44 ./Uart.o
+                0x0000000000000478                _ZN4Uart20rx_interrupt_handlerEv
+ .text._ZN4Uart23empty_interrupt_handlerEv
+                0x00000000000004bc       0x3c ./Uart.o
+                0x00000000000004bc                _ZN4Uart23empty_interrupt_handlerEv
+ .text.__vector_18
+                0x00000000000004f8       0x52 ./Uart.o
+                0x00000000000004f8                __vector_18
+ .text.__vector_19
+                0x000000000000054a       0x52 ./Uart.o
+                0x000000000000054a                __vector_19
+ .text._ZN4Uart11interruptonEv
+                0x000000000000059c       0x10 ./Uart.o
+                0x000000000000059c                _ZN4Uart11interruptonEv
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x00000000000005ac       0x6a ./Uart.o
+ .text._GLOBAL__I__ZN4Uart1uE
+                0x0000000000000616       0x18 ./Uart.o
+ .text._GLOBAL__D__ZN4Uart1uE
+                0x000000000000062e       0x18 ./Uart.o
+ .text._Z7appSend4Uarth
+                0x0000000000000646       0x36 ./main.o
+                0x0000000000000646                _Z7appSend4Uarth
+ .text._Z10appReceive4Uart
+                0x000000000000067c       0x24 ./main.o
+                0x000000000000067c                _Z10appReceive4Uart
+ .text.main     0x00000000000006a0       0x9e ./main.o
+                0x00000000000006a0                main
+ .text.libgcc   0x000000000000073e        0xc /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+                0x000000000000073e                __tablejump2__
+                0x0000000000000742                __tablejump__
+ .text.avr-libc
+                0x000000000000074a      0x266 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000000000000074a                malloc
+                0x000000000000087e                free
+                0x00000000000009b0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000000000009b0        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                0x00000000000009b0                exit
+                0x00000000000009b0                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00000000000009b0       0x14 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+                0x00000000000009b0                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000000000009c4        0x4 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000000000009c8                _etext = .
+
+.data           0x0000000000800100       0x24 load address 0x00000000000009c8
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x6 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000800100                __malloc_margin
+                0x0000000000800102                __malloc_heap_start
+                0x0000000000800104                __malloc_heap_end
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZN6Buffer6bufferE
+                0x0000000000800106       0x14 ./Buffer.o
+                0x0000000000800106                _ZN6Buffer6bufferE
+ .rodata._ZN6Buffer6maxLenE
+                0x000000000080011a        0x2 ./Buffer.o
+                0x000000000080011a                _ZN6Buffer6maxLenE
+ .rodata._ZTV6Buffer
+                0x000000000080011c        0x8 ./Buffer.o
+                0x000000000080011c                _ZTV6Buffer
+ *(.gnu.linkonce.d*)
+                0x0000000000800124                . = ALIGN (0x2)
+                0x0000000000800124                _edata = .
+                0x0000000000800124                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800124       0x17
+                0x0000000000800124                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZN6Buffer1bE
+                0x0000000000800124        0x6 ./Buffer.o
+                0x0000000000800124                _ZN6Buffer1bE
+ .bss._ZN4Uart1uE
+                0x000000000080012a        0x1 ./Uart.o
+                0x000000000080012a                _ZN4Uart1uE
+ .bss._ZN4Uart2rxE
+                0x000000000080012b        0x6 ./Uart.o
+                0x000000000080012b                _ZN4Uart2rxE
+ .bss._ZN4Uart2txE
+                0x0000000000800131        0x6 ./Uart.o
+                0x0000000000800131                _ZN4Uart2txE
+ *(COMMON)
+ COMMON         0x0000000000800137        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000800137                __brkval
+                0x0000000000800139                __flp
+                0x000000000080013b                PROVIDE (__bss_end, .)
+                0x00000000000009c8                __data_load_start = LOADADDR (.data)
+                0x00000000000009ec                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x000000000080013b        0x0
+                0x000000000080013b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x000000000080013b                PROVIDE (__noinit_end, .)
+                0x000000000080013b                _end = .
+                0x000000000080013b                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x21e4
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ .stab          0x00000000000006cc      0x8ac ./Buffer.o
+                                        0x8b8 (size before relaxing)
+ .stab          0x0000000000000f78      0x5d0 ./Uart.o
+                                        0x60c (size before relaxing)
+ .stab          0x0000000000001548      0x54c ./main.o
+                                        0x5c4 (size before relaxing)
+ .stab          0x0000000000001a94      0x750 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                                        0x75c (size before relaxing)
+
+.stabstr        0x0000000000000000     0x1691
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x1691 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(uartcpp1.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+Buffer::Buffer()                                  ./Buffer.o
+                                                  ./Uart.o
+Buffer::Buffer()                                  ./Buffer.o
+Buffer::b                                         ./Buffer.o
+Buffer::buffer                                    ./Buffer.o
+Buffer::circBufPop(Buffer*)                       ./Buffer.o
+                                                  ./main.o
+                                                  ./Uart.o
+Buffer::circBufPush(Buffer*, unsigned char)       ./Buffer.o
+                                                  ./main.o
+                                                  ./Uart.o
+Buffer::getBuffer() const                         ./Buffer.o
+Buffer::getHead() const                           ./Buffer.o
+Buffer::getMaxLen() const                         ./Buffer.o
+Buffer::getTail() const                           ./Buffer.o
+Buffer::maxLen                                    ./Buffer.o
+Buffer::setHead(int)                              ./Buffer.o
+Buffer::setTail(int)                              ./Buffer.o
+Buffer::~Buffer()                                 ./Buffer.o
+Buffer::~Buffer()                                 ./Buffer.o
+                                                  ./Uart.o
+Buffer::~Buffer()                                 ./Buffer.o
+Uart::Uart()                                      ./Uart.o
+Uart::Uart()                                      ./Uart.o
+                                                  ./main.o
+Uart::empty_interrupt_handler()                   ./Uart.o
+Uart::interruptoff()                              ./Uart.o
+Uart::interrupton()                               ./Uart.o
+                                                  ./main.o
+Uart::rx                                          ./Uart.o
+                                                  ./main.o
+Uart::rx_interrupt_handler()                      ./Uart.o
+Uart::tx                                          ./Uart.o
+                                                  ./main.o
+Uart::u                                           ./Uart.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__brkval                                          /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+__ctors_end                                       /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+__ctors_start                                     /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+__data_end                                        /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  ./Uart.o
+                                                  ./Buffer.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  ./Buffer.o
+__do_global_ctors                                 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+                                                  ./Uart.o
+                                                  ./Buffer.o
+__do_global_dtors                                 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+                                                  ./Uart.o
+                                                  ./Buffer.o
+__dtors_end                                       /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+__dtors_start                                     /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+__flp                                             /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__heap_end                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+__stack                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+__tablejump__                                     /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_tablejump.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_dtors.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_ctors.o)
+__vector_1                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_10                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_11                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_12                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_13                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_14                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_15                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_16                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_17                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_18                                       ./Uart.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_19                                       ./Uart.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_2                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_20                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_21                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_22                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_23                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_24                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_25                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_3                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_4                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_5                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_6                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_7                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_8                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_9                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vector_default                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+__vectors                                         /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+_exit                                             /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+appReceive(Uart)                                  ./main.o
+appSend(Uart, unsigned char)                      ./main.o
+delay()                                           ./main.o
+exit                                              /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+free                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  ./Buffer.o
+main                                              ./main.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+malloc                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(malloc.o)
+operator delete(void*)                            ./Buffer.o
+vtable for Buffer                                 ./Buffer.o
