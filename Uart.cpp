@@ -8,11 +8,8 @@
 #include "Uart.h"
 #include "avr/io.h"
 #include "avr/interrupt.h"
-#include "Buffer.h"
 
-Uart Uart::u;
-Buffer Uart::rx;
-Buffer Uart::tx;
+Uart Uart::uart;
 
 
 Uart::Uart(){
@@ -27,8 +24,22 @@ Uart::Uart(){
 	PORTB = 0x80;
 }
 
+void Uart::put(uint8_t c) {
+    uart.tx.push(c);
+    UCSR0B |= 0x20;
+}
+
+uint8_t Uart::get() {
+    return uart.rx.pop();
+}
+
+bool Uart::has_data() {
+    return uart.rx.has_data();
+}
+
 void Uart::rx_interrupt_handler() {
-	if(u.rx.circBufPush(& u.rx,UDR0) == -1) PORTB |= _BV(PORTB5);
+    uart.rx.push(UDR0);
+
 	//TEST
 //	PORTB &= ~_BV(PORTB5);	//LIGA LED
 //	PORTB |= _BV(PORTB5);	//DESLIGA LED
@@ -38,10 +49,9 @@ void Uart::empty_interrupt_handler(){
 	//TEST
 //	PORTB &= ~_BV(PORTB5);	//LIGA LED
 //	PORTB |= _BV(PORTB5);	//DESLIGA LED
-	uint8_t aux = u.tx.circBufPop(& u.tx);
-	if(aux == -1) PORTB |= _BV(PORTB5);
-	UDR0 = aux;
-	UCSR0B &= ~0x20;
+    if(uart.tx.has_data())
+        UDR0 = uart.tx.pop();
+    else UCSR0B &= ~0x20;
 }
 
 ISR(USART_RX_vect ){

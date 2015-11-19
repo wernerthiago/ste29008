@@ -45,47 +45,47 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-uartcpp1.lss \
+uart-werner.lss \
 
 FLASH_IMAGE += \
-uartcpp1.hex \
+uart-werner.hex \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: uartcpp1.elf secondary-outputs
+all: uart-werner.elf secondary-outputs
 
 # Tool invocations
-uartcpp1.elf: $(OBJS) $(USER_OBJS)
+uart-werner.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -Wl,-Map,uartcpp1.map,--cref -mrelax -Wl,--gc-sections -mmcu=atmega328p -o "uartcpp1.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-g++ -Wl,-Map,uart-werner.map,--cref -mrelax -Wl,--gc-sections -mmcu=atmega328p -o "uart-werner.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-uartcpp1.lss: uartcpp1.elf
+uart-werner.lss: uart-werner.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S uartcpp1.elf  >"uartcpp1.lss"
+	-avr-objdump -h -S uart-werner.elf  >"uart-werner.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-uartcpp1.hex: uartcpp1.elf
+uart-werner.hex: uart-werner.elf
 	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex uartcpp1.elf  "uartcpp1.hex"
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex uart-werner.elf  "uart-werner.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: uartcpp1.elf
+sizedummy: uart-werner.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega328p uartcpp1.elf
+	-avr-size --format=avr --mcu=atmega328p uart-werner.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(FLASH_IMAGE)$(ELFS)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) uartcpp1.elf
+	-$(RM) $(OBJS)$(C_DEPS)$(FLASH_IMAGE)$(ELFS)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) uart-werner.elf
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(FLASH_IMAGE) $(SIZEDUMMY)

@@ -8,22 +8,26 @@
 #ifndef UART_H_
 #define UART_H_
 
-#include "Buffer.h"
+#include "Circular_Buffer.h"
 
 class Uart {
 private:
-	static Uart u;
+    static Uart uart;
+	static const int Buffer_Size = 10;
 
 public:
 	Uart();
-	int uart_has_data();
-	int uart_to_receive();
+	bool has_data();
+	void put(uint8_t c);
+	uint8_t get();
+
 	static void rx_interrupt_handler();
 	static void empty_interrupt_handler();
 	static void interruptoff();
 	static void interrupton();
-	Buffer rx;
-	Buffer tx;
+
+	Circular_Buffer<Buffer_Size> rx;
+	Circular_Buffer<Buffer_Size> tx;
 };
 
 #endif /* UART_H_ */
