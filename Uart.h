@@ -13,7 +13,7 @@
 class Uart {
 private:
     static Uart uart;
-	static const int Buffer_Size = 10;
+	static const int Buffer_Size = 25;
 
 public:
 	Uart();

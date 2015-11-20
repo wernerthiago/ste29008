@@ -8,50 +8,27 @@
 #include "avr/io.h"
 #include "avr/interrupt.h"
 #include <stdlib.h>
-
 #include "Circular_Buffer.h"
 #include "Uart.h"
+#include "util/atomic.h"
+#include "util/delay.h"
+#define TIME 1		//milissegundos
+
 
 void operator delete(void * p) {
-    free(p);
+	free(p);
 }
-
-
-void delay(){
-    volatile unsigned long x = 0xffff;
-    while(x--);
-}
-
-//void appSend(Uart u, uint8_t data){
-//	UDR0 = data;
-//	u.tx.circBufPush(& u.tx, UDR0);
-//}
-
-//uint8_t appReceive(Uart u){
-//	uint8_t data = u.rx.circBufPop(& u.tx);
-//}
 
 int main() {
-	Uart u;
-	u.interrupton();
-
-//	appSend(u,'x');
-//	UDR0 = appReceive(u);
-//	appSend(u,'z');
-//	UDR0 = appReceive(u);
-//	appSend(u,'w');
-//	UDR0 = appReceive(u);
-//	appSend(u,'t');
-//	UDR0 = appReceive(u);
+	Uart u;							//UART object
+	u.interrupton();				//activate interrupts
 
 	while (true) {
-	    if(u.has_data())
-	        u.put(u.get());
-
-//		if(u.rx.getTail() != u.rx.getHead()){
-//			u.tx.circBufPush(& u.tx, u.rx.circBufPop(& u.rx));
-//            UCSR0B |= 0x20;
-//		}
+		if(u.has_data()){			//check UART for send data
+			uint8_t aux = u.get();	//getting data
+			_delay_ms(TIME);		//simulating data processing
+			u.put(aux);				//transferring data
+		}
 	}
 	return 0;
 }
